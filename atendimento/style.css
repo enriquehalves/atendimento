@@ -1,0 +1,18 @@
+.dbug {
+    display: contents;
+    border: 2px solid black;
+    background-color: blue;
+}
+
+.dbug > ul{
+    list-style: none;  
+}
+ 
+h2{
+    text-align: center;
+}
+
+.formdbug > li > div{
+    padding: 2px;
+}
+ 

@@ -1,20 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="E:/web/js/jquery-3.6.0.min.js"></script>
     <script src="E:/web/bootstrap/js/bootstrap.min.js"></script>
+    <script src="E:\web\maskjs\jquery.mask.min.js"></script>
     <script src="index.js"></script>
-    <link rel="stylesheet" href="E:/web/bootstrap/css/bootstrap.min.css"/>
-    
-    
-    
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="E:/web/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Atendimento</title>
 </head>
+
 <body>
-   
+    
+    
+    <div class="container">
+        <!--dbug-->
+        <div class="row">
+          <div class="col-sm" id="dbug">
+            <h2>Dbug</h2>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Data</label>
+                <input type="text" class="form-control data"   >
+            </div>
+            <div class="form-group">
+                <label for="atendente">Atendente</label>
+                <input type="text" class="form-control atendente"  >
+            </div>
+            <div class="form-group">
+                <label for="requerente">Requerente</label>
+                <input type="text" class="form-control requerente"   >
+            </div>
+            <div class="form-group">
+                <label for="atendente">Descrição</label>
+                <textarea class="form-control descricao"   ></textarea>
+            </div>
+            <div class="form-group">
+                <label for="atendente">Contato</label>
+                <input type="text" class="form-control contato"   > 
+            </div>
+            <div class="form-group cpf">
+                <label for="exampleInputEmail1">CPF</label>
+                <input type="text" class="form-control campocpf"  >
+            </div>
+            <div class="form-group cnpj">
+                <label for="exampleInputEmail1">CNPJ</label>
+                <input type="text" class="form-control campocnpj " >
+            </div>
+            <button class="btn btn-secondary botao" onclick="recarregar()">Voltar</button>
+          </div>
+          <!--vainet-->
+          <div class="col-sm" id="vainet">
+            <h2>Vainet</h2>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Atendente</label>
+                <input type="text" class="form-control atendente" >
+            </div>
+            <div class="form-group">
+                <label for="requerente">Requerente</label>
+                <input type="text" class="form-control requerente"  >
+            </div>
+            <div class="form-group">
+                <label for="atendente">Contato</label>
+                <input type="text" class="form-control contato"   >
+            </div>
+            <div class="form-group">
+                <label for="requerente">Assinante</label>
+                <input type="text" class="form-control requerente"  >
+            </div>
+            <div class="form-group">
+                <label for="atendente">Descrição</label>
+                <textarea class="form-control descricao" ></textarea>
+            </div>
+            <div class="form-group cpf">
+                <label for="exampleInputEmail1">CPF</label>
+                <input type="text" class="form-control campocpf"  >
+            </div>
+            <div class="form-group cnpj">
+                <label for="exampleInputEmail1">CNPJ</label>
+                <input type="text" class="form-control campocnpj " >
+            </div>
+            <button class="btn btn-secondary botao" onclick="recarregar()">Voltar</button>
+          </div>
+          <div class="col-sm" id="netturbo">
+             <h2>Netturbo</h2>
+             <div class="form-group">
+                <label for="exampleInputEmail1">Atendente</label>
+                <input type="text" class="form-control atendente">
+                 
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Nome</label>
+                <input type="text" class="form-control nome" >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Cliente</label>
+                <input type="text" class="form-control cliente" >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">ID Circuito</label>
+                <input type="text" class="form-control idcircuit" >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="text" class="form-control email" >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Telefone</label>
+                <input type="text" class="form-control telefone" >
+            </div>
+            <div class="form-group">
+                <label for="atendente">Reclamação</label>
+                <textarea class="form-control reclamacao" ></textarea>
+            </div>
+            <div class="form-group cpf">
+                <label for="exampleInputEmail1">CPF</label>
+                <input type="text" class="form-control campocpf"  >
+            </div>
+            <div class="form-group cnpj">
+                <label for="exampleInputEmail1">CNPJ</label>
+                <input type="text" class="form-control campocnpj " >
+            </div>
+                <button class="btn btn-secondary botao"  onclick="recarregar()">Voltar</button>
+          </div>
+        </div>
+      </div>
+
 </body>
+
 </html>
