@@ -2,13 +2,14 @@ $(document).ready(function () {
 
     function camposOcultos() {
         $(".cpfcnpj").hide()
+         
     }
     function botoes() {
-        $(".botao").hide()
+        $(".btn").hide()
     }
 
     function setarAtendente() {
-        $(".atendente").val("Jonas Henrique")
+        $(".atendente1, .atendente2, .atendente3").val("Jonas Henrique")
     }
 
 
@@ -32,20 +33,20 @@ $(document).ready(function () {
         $("#dbug").click(function () {
             $("#vainet").hide()
             $("#netturbo").hide()
-            $(".botao").show()
+            $(".btn").show()
             $(".cpfcnpj").show()
         })
         $("#vainet").click(function () {
             $("#dbug").hide()
             $("#netturbo").hide()
-            $(".botao").show()
+            $(".btn").show()
             $(".cpfcnpj").show()
 
         })
         $("#netturbo").click(function () {
             $("#vainet").hide()
             $("#dbug").hide()
-            $(".botao").show()
+            $(".btn").show()
             $(".cpfcnpj").show()
 
         })
@@ -68,6 +69,18 @@ $(document).ready(function () {
     $(".botao").click(function () {
         location.reload()
     })
+    $(".botaocp1").click(function(){
+        $("#oculto").val("data: "+$(".data").val()+"\n"+"atendente: "+$('.atendente1').val()+"\n"+"requerente: "+$(".requerente1").val()+"\n"+"descrição:"+$('.descricao1').val()+"\n"+"contato: "+$(".contato1").val())
+        $("#oculto").select();
+        document.execCommand("copy")
+
+    })
+    $(".botaocp2").click(function(){
+
+    })
+    $(".botaocp3").click(function(){
+
+    })
 
 
     camposOcultos()
@@ -77,4 +90,5 @@ $(document).ready(function () {
     selecionaAntendimento()
     mascaras()
 
+    $("#oculto").val("data: "+$(".data").val()+"\n"+"atendente: "+$('.atendente1').val())
 });
