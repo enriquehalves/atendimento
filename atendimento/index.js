@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     function camposOcultos() {
         $(".cpfcnpj").hide()
+       
          
     }
     function botoes() {
@@ -76,10 +77,15 @@ $(document).ready(function () {
 
     })
     $(".botaocp2").click(function(){
+        $("#oculto").val("atendente: "+$(".atendente2").val()+"\n"+"requerente: "+$(".requerente.2").val()+"\n"+"contato: "+$(".contato2").val()+"\n"+"assinante: "+$(".assinante").val()+"\n"+"descrição: "+$(".descricao2").val())
+        $("#oculto").select();
+        document.execCommand("copy")
 
     })
     $(".botaocp3").click(function(){
-
+        $("#oculto").val("atendente: "+$(".atendente3").val()+"\n"+"nome: "+$(".nome").val()+"\n"+"cliente: "+$(".cliente").val()+"\n"+"id circuito: "+$(".idcircuito").val()+"\n"+"email: "+$(".email").val()+"\n"+"telefone: "+$(".telefone").val()+"\n"+"reclamação: "+$(".reclamacao").val())
+        $("#oculto").select();
+        document.execCommand("copy")
     })
 
 
@@ -90,5 +96,5 @@ $(document).ready(function () {
     selecionaAntendimento()
     mascaras()
 
-    $("#oculto").val("data: "+$(".data").val()+"\n"+"atendente: "+$('.atendente1').val())
+    
 });

@@ -1,0 +1,4 @@
+<script src="E:/web/js/jquery-3.6.0.min.js"></script>
+<script src="E:/web/bootstrap/js/bootstrap.min.js"></script>
+<script src="E:\web\maskjs\jquery.mask.min.js"></script>
+<link rel="stylesheet" href="E:/web/bootstrap/css/bootstrap.min.css"/>
